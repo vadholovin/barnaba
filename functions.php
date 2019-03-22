@@ -35,47 +35,6 @@ add_filter( 'excerpt_more', 'vh_excerpt_more' );
 // Register post types
 function vh_register_post_types() {
 
-  // price section
-  register_post_type('price', array(
-    'label'  => null,
-    'labels' => array(
-      'name'               => 'Все Прайсы', // основное название для типа записи
-      'singular_name'      => 'Прайс', // название для одной записи этого типа
-      'add_new'            => 'Добавить Прайс', // для добавления новой записи
-      'add_new_item'       => 'Добавление Прайса', // заголовка у вновь создаваемой записи в админ-панели.
-      'edit_item'          => 'Редактирование Прайса', // для редактирования типа записи
-      'new_item'           => 'Новый Прайс', // текст новой записи
-      'view_item'          => 'Смотреть Прайс', // для просмотра записи этого типа.
-      'search_items'       => 'Искать Прайс', // для поиска по этим типам записи
-      'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
-      'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
-      'parent_item_colon'  => '', // для родителей (у древовидных типов)
-      'menu_name'          => 'Услуги и Цены', // название меню
-    ),
-    'description'         => '',
-    'public'              => true,
-    'publicly_queryable'  => true, // зависит от public
-    'exclude_from_search' => true, // зависит от public
-    'show_ui'             => true, // зависит от public
-    'show_in_menu'        => true, // показывать ли в меню адмнки
-    'show_in_admin_bar'   => true, // по умолчанию значение show_in_menu
-    'show_in_nav_menus'   => true, // зависит от public
-    'show_in_rest'        => true, // добавить в REST API. C WP 4.7
-    'rest_base'           => null, // $post_type. C WP 4.7
-    'menu_position'       => 4,
-    'menu_icon'           => 'dashicons-book-alt', 
-    //'capability_type'   => 'post',
-    //'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
-    //'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
-    'hierarchical'        => false,
-    'supports'            => array('title'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
-    'taxonomies'          => array(),
-    'has_archive'         => false,
-    'rewrite'             => true,
-    'query_var'           => true,
-  ) );
-
-
   // Slider in portfolio section
   register_post_type('portfolio-slider', array(
     'label'  => null,
@@ -103,7 +62,7 @@ function vh_register_post_types() {
     'show_in_nav_menus'   => true, // зависит от public
     'show_in_rest'        => true, // добавить в REST API. C WP 4.7
     'rest_base'           => null, // $post_type. C WP 4.7
-    'menu_position'       => 5,
+    'menu_position'       => 4,
     'menu_icon'           => 'dashicons-format-gallery', 
     //'capability_type'   => 'post',
     //'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
@@ -144,7 +103,7 @@ function vh_register_post_types() {
     'show_in_nav_menus'   => true, // зависит от public
     'show_in_rest'        => true, // добавить в REST API. C WP 4.7
     'rest_base'           => null, // $post_type. C WP 4.7
-    'menu_position'       => 6,
+    'menu_position'       => 5,
     'menu_icon'           => 'dashicons-format-gallery', 
     //'capability_type'   => 'post',
     //'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
@@ -185,7 +144,7 @@ function vh_register_post_types() {
 		'show_in_nav_menus'   => true, // зависит от public
 		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
 		'rest_base'           => null, // $post_type. C WP 4.7
-		'menu_position'       => 7,
+		'menu_position'       => 6,
 		'menu_icon'           => 'dashicons-format-gallery', 
 		//'capability_type'   => 'post',
 		//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
@@ -226,7 +185,7 @@ function vh_register_post_types() {
 		'show_in_nav_menus'   => true, // зависит от public
 		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
 		'rest_base'           => null, // $post_type. C WP 4.7
-		'menu_position'       => 8,
+		'menu_position'       => 7,
 		'menu_icon'           => 'dashicons-format-status',
 		//'capability_type'   => 'post',
 		//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
@@ -267,7 +226,7 @@ function vh_register_post_types() {
 		'show_in_nav_menus'   => true, // зависит от public
 		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
 		'rest_base'           => null, // $post_type. C WP 4.7
-		'menu_position'       => 9,
+		'menu_position'       => 8,
 		'menu_icon'           => 'dashicons-format-status',
 		//'capability_type'   => 'post',
 		//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
@@ -308,7 +267,7 @@ function vh_register_post_types() {
 		'show_in_nav_menus'   => true, // зависит от public
 		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
 		'rest_base'           => null, // $post_type. C WP 4.7
-		'menu_position'       => 7,
+		'menu_position'       => 9,
 		'menu_icon'           => 'dashicons-format-gallery', 
 		//'capability_type'   => 'post',
 		//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи

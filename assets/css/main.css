@@ -548,7 +548,7 @@ body {
 }
 
 .text_block_line_1 {
-  font-family: Extenda;
+  font-family: Extenda, sans-serif;
   font-size: 48px;
   line-height: 1;
   letter-spacing: 4px;
@@ -573,7 +573,7 @@ body {
 }
 
 .text_block_line_2 {
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
@@ -585,7 +585,7 @@ body {
 }
 
 .button {
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 16px;
   color: #fff;
   background-color: rgb(39, 79, 39);
@@ -789,7 +789,7 @@ body {
 }
 
 .about_us h2 {
-  font-family: Extenda;
+  font-family: Extenda, sans-serif;
   font-size: 52px;
 
   color: rgb(51, 51, 51);
@@ -800,7 +800,7 @@ body {
 }
 
 .about_us p {
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgb(17, 17, 17);
@@ -897,7 +897,7 @@ body {
 
 .price_list_first_line h2 {
   color: #ffffff;
-  font-family: Extenda;
+  font-family: Extenda, sans-serif;
   font-size: 52px;
   font-weight: 400;
   line-height: 52px;
@@ -910,7 +910,7 @@ body {
   display: block;
   position: relative;
   color: #ffffff;
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -973,7 +973,7 @@ body {
 
 .service_list_button {
   flex-basis: 50%;
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
@@ -1016,7 +1016,7 @@ body {
 
 .price_table {
   color: #ffffff;
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin-top: 15px;
@@ -1060,20 +1060,6 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin: 0 12px;
 }
-
-/* .price_table li > span {
-  display: inline-block;
-}
-
-.price_table li > span:first-child {
-  max-width: 60%;
-  order: 1;
-}
-
-.price_table li > span:last-child {
-  flex: none;
-  order: 3;
-} */
 
 .serv,
 .price {
@@ -1210,7 +1196,7 @@ body {
 }
 
 .our_team_wrapper h2 {
-  font-family: Extenda;
+  font-family: Extenda, sans-serif;
   font-size: 52px;
   color: rgb(51, 51, 51);
   text-transform: uppercase;
@@ -1223,7 +1209,7 @@ body {
 
 .our_team_wrapper p {
   color: #222222;
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -1345,7 +1331,7 @@ body {
 
 .masters_card_title {
   color: #333333;
-  font-family: Extenda;
+  font-family: Extenda, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1634,7 +1620,7 @@ body {
 
 .review_card_text .review_more {
   color: #274f27;
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 22px;
@@ -1977,7 +1963,7 @@ body {
 
 .call_back_form h2 {
   color: #ffffff;
-  font-family: Extenda;
+  font-family: Extenda, sans-serif;
   font-size: 52px;
   font-weight: 400;
   line-height: 52px;
@@ -1987,7 +1973,7 @@ body {
 
 .call_back_form p {
   color: #ffffff;
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
@@ -2020,7 +2006,7 @@ body {
 }
 
 .partners h2 {
-  font-family: Extenda;
+  font-family: Extenda, sans-serif;
   font-size: 52px;
   color: rgb(51, 51, 51);
   text-transform: uppercase;
@@ -2150,7 +2136,7 @@ body {
 
 .social_links p {
   color: #cccccc;
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 36px;
@@ -2213,7 +2199,7 @@ body {
 
 .online_notation_button a {
   color: #ffffff;
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 36px;
@@ -2228,7 +2214,7 @@ body {
 /* ----- BUTTONS ----- */
 
 .masters_cards_button {
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 14px;
   color: #fff;
   background-color: rgb(39, 79, 39);
@@ -2240,7 +2226,7 @@ body {
 }
 
 .news_button {
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 14px;
   color: #fff;
   background-color: rgb(39, 79, 39);
@@ -2253,7 +2239,7 @@ body {
 
 
 .reviews_button {
-  font-family: Museo Sans Cyrl;
+  font-family: Museo Sans Cyrl, sans-serif;
   font-size: 14px;
   color: #fff;
   background-color: rgb(39, 79, 39);

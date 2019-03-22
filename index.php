@@ -204,181 +204,43 @@
         </div>
         <div class="price_content">
           <div class="price_table master is-open">
-            <ul>
-
-              <li>
-                <span class="serv">Стрижка машинкой</span>
-                <span class="price">500 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Бритье головы</span>
-                <span class="price">1200 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Детская стрижка</span>
-                <span class="price">600 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Укладка</span>
-                <span class="price">300 руб</span>
-              </li>
-              <li>
-                <span class="serv">Мужская стрижка</span>
-                <span class="price">700 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Стрижка машинкой</span>
-                <span class="price">500 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Детская стрижка</span>
-                <span class="price">600 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Укладка</span>
-                <span class="price">300 руб</span>
-              </li>
-
-            </ul>
+            <?php
+            $price = get_field('price');	
+            
+            if( $price ) {
+              echo $price['master'];
+            }
+            ?>
           </div>
 
           <div class="price_table junior">
-            <ul>
-
-              <li>
-                <span class="serv">Стрижка машинкой</span>
-                <span class="price">500 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Бритье головы</span>
-                <span class="price">1200 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Детская стрижка</span>
-                <span class="price">600 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Укладка</span>
-                <span class="price">300 руб</span>
-              </li>
-              <li>
-                <span class="serv">Мужская стрижка</span>
-                <span class="price">700 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Стрижка машинкой</span>
-                <span class="price">500 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Детская стрижка</span>
-                <span class="price">600 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Укладка</span>
-                <span class="price">300 руб</span>
-              </li>
-              
-            </ul>
+            <?php
+            $price = get_field('price');	
+            
+            if( $price ) {
+              echo $price['junior'];
+            }
+            ?>
           </div>
 
           <div class="price_table sell-out">
-            <ul>
-              <li>
-                <span class="serv">Стрижка машинкой</span>
-                <span class="price">500 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Бритье головы</span>
-                <span class="price">1200 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Детская стрижка</span>
-                <span class="price">600 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Укладка</span>
-                <span class="price">300 руб</span>
-              </li>
-              <li>
-                <span class="serv">Мужская стрижка</span>
-                <span class="price">700 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Стрижка машинкой</span>
-                <span class="price">500 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Детская стрижка</span>
-                <span class="price">600 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Укладка</span>
-                <span class="price">300 руб</span>
-              </li>
-              
-            </ul>
+            <?php
+            $price = get_field('price');	
+            
+            if( $price ) {
+              echo $price['action'];
+            }
+            ?>
           </div>
 
           <div class="price_table extra">
-            <ul>
-              <li>
-                <span class="serv">Стрижка машинкой</span>
-                <span class="price">500 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Бритье головы</span>
-                <span class="price">1200 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Детская стрижка</span>
-                <span class="price">600 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Укладка</span>
-                <span class="price">300 руб</span>
-              </li>
-              <li>
-                <span class="serv">Мужская стрижка</span>
-                <span class="price">700 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Стрижка машинкой</span>
-                <span class="price">500 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Детская стрижка</span>
-                <span class="price">600 руб</span>
-              </li>
-
-              <li>
-                <span class="serv">Укладка</span>
-                <span class="price">300 руб</span>
-              </li>
-              
-            </ul>
+            <?php
+            $price = get_field('price');	
+            
+            if( $price ) {
+              echo $price['extra'];
+            }
+            ?>
           </div>
         </div>
       </div>
