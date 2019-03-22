@@ -27,10 +27,20 @@ function vh_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'vh_custom_excerpt_length', 999 );
 
+// custom excerpt more
 function vh_excerpt_more( $more ) {
   return '...';
 }
 add_filter( 'excerpt_more', 'vh_excerpt_more' );
+
+//filter the <p> tags from the images and iFrame
+function filter_ptags_on_images($content) {
+  $content = preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+  return preg_replace('/<p>\s*(<iframe .*>*.<\/iframe>)\s*<\/p>/iU', '\1', $content);
+}
+add_filter('acf_the_content', 'filter_ptags_on_images', 9999);
+add_filter('the_content', 'filter_ptags_on_images', 9999);
+
 
 // Register post types
 function vh_register_post_types() {

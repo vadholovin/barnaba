@@ -671,8 +671,7 @@
     </div>
 
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19661.79324974106!2d36.64837802436059!3d50.59617848965195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41266a5129e7c903%3A0xef3c96c58673dac3!2z0YPQuy4g0JHQtdC70LPQvtGA0L7QtNGB0LrQvtCz0L4g0J_QvtC70LrQsCwgNjIsINCR0LXQu9Cz0L7RgNC-0LQsINCR0LXQu9Cz0L7RgNC-0LTRgdC60LDRjyDQvtCx0LsuLCAzMDgwMDE!5e0!3m2!1sru!2sru!4v1552336692924"
-        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <?php the_field( 'map' ); ?>
     </div>
   </section>
 
@@ -680,127 +679,57 @@
 
   <!-- MODALS -->
   <!-- Modal form sign up -->
-  <div class="modalbox modalbox--signUp">
+  <div class="modalbox modalbox--signUp js-modal-form">
     <div class="modal-container">
       <div class="modal-body">
-        <form action="" class="modal-form">
-          <button type="button" class="btn-modal-close"></button>
-          <p class="modal-form__title">Online запись</p>
-
-          <div class="modal-form__controls">
-            <div class="form-control__wrap">
-              <input type="text" class="form-control" name="user-name" id="user-name" placeholder="Ваше имя*">
-            </div>
-            <div class="form-control__wrap">
-              <input type="tel" class="form-control" name="user-phone" id="user-phone" placeholder="Телефон*">
-            </div>
-            <div class="form-control__wrap">
-              <input type="email" class="form-control" name="user-email" id="user-email" placeholder="Email">
-            </div>
-            <div class="form-control__wrap form-control__wrap--textarea">
-              <textarea class="form-control form-control--textarea" name="user-message" id="user-message" placeholder="Сообщение*"></textarea>
-            </div>
-          </div>
-
-          <div class="button-row button-holder--modal">
-            <button type="button" class="button">Оставить заявку</button>
-          </div>
-        </form>
+        <button type="button" class="btn-modal-close"></button>
+        <p class="modal-form__title">Online запись</p>
+        <?php echo do_shortcode( '[contact-form-7 id="118" title="Online запись"]' ); ?>
       </div>
     </div>
   </div><!-- .modalbox end -->
 
 
   <!-- Modal form consult -->
-  <div class="modalbox modalbox--consult">
+  <div class="modalbox modalbox--consult js-modal-form">
     <div class="modal-container">
       <div class="modal-body">
-        <form action="" class="modal-form">
-          <button type="button" class="btn-modal-close"></button>
-          <p class="modal-form__title">Требуется консультация?</p>
-
-          <div class="modal-form__controls">
-            <div class="form-control__wrap">
-              <input type="text" class="form-control" name="user-name" id="user-name" placeholder="Ваше имя*">
-            </div>
-            <div class="form-control__wrap">
-              <input type="tel" class="form-control" name="user-phone" id="user-phone" placeholder="Телефон*">
-            </div>
-            <div class="form-control__wrap">
-              <input type="email" class="form-control" name="user-email" id="user-email" placeholder="Email">
-            </div>
-            <div class="form-control__wrap form-control__wrap--textarea">
-              <textarea class="form-control form-control--textarea" name="user-message" id="user-message" placeholder="Сообщение*"></textarea>
-            </div>
-          </div>
-
-          <div class="button-row button-holder--modal">
-            <button type="button" class="button">Оставить заявку</button>
-          </div>
-        </form>
+        <button type="button" class="btn-modal-close"></button>
+        <p class="modal-form__title">Требуется консультация?</p>
+        <?php echo do_shortcode( '[contact-form-7 id="119" title="Требуется консультация?"]' ); ?>
       </div>
     </div>
   </div><!-- .modalbox end -->
 
 
   <!-- Modal form review -->
-  <div class="modalbox modalbox--review">
+  <div class="modalbox modalbox--review js-modal-form">
     <div class="modal-container">
       <div class="modal-body">
-        <form action="" class="modal-form">
-          <button type="button" class="btn-modal-close"></button>
-          <p class="modal-form__title">Ваш отзыв</p>
-
-          <div class="modal-form__controls">
-            <div class="form-control__wrap">
-              <input type="text" class="form-control" name="user-name" id="user-name" placeholder="Ваше имя*">
-            </div>
-            <div class="form-control__wrap">
-              <input type="tel" class="form-control" name="user-phone" id="user-phone" placeholder="Телефон*">
-            </div>
-            <div class="form-control__wrap">
-              <input type="email" class="form-control" name="user-email" id="user-email" placeholder="Email">
-            </div>
-            <div class="form-control__wrap form-control__wrap--textarea">
-              <textarea class="form-control form-control--textarea" name="user-message" id="user-message" placeholder="Сообщение*"></textarea>
-            </div>
-          </div>
-
-          <div class="button-row button-holder--modal">
-            <button type="button" class="button">Отправить</button>
-          </div>
-        </form>
+        <button type="button" class="btn-modal-close"></button>
+        <p class="modal-form__title">Ваш отзыв</p>
+        <?php echo do_shortcode( '[contact-form-7 id="120" title="Ваш отзыв"]' ); ?>
       </div>
     </div>
   </div><!-- .modalbox end -->
 
   <!-- Modal form discount -->
-  <div class="modalbox modalbox--discount">
+  <div class="modalbox modalbox--discount js-modal-form">
     <div class="modal-container">
       <div class="modal-body">
-        <form action="" class="modal-form">
-          <button type="button" class="btn-modal-close"></button>
-          <p class="modal-form__title">Акция на первое посещение</p>
+        <button type="button" class="btn-modal-close"></button>
+        <p class="modal-form__title">Акция на первое посещение</p>
+        <?php echo do_shortcode( '[contact-form-7 id="121" title="Акция на первое посещение"]' ); ?>
+      </div>
+    </div>
+  </div><!-- .modalbox end -->
 
-          <div class="modal-form__controls">
-            <div class="form-control__wrap">
-              <input type="text" class="form-control" name="user-name" id="user-name" placeholder="Ваше имя*">
-            </div>
-            <div class="form-control__wrap">
-              <input type="tel" class="form-control" name="user-phone" id="user-phone" placeholder="Телефон*">
-            </div>
-            <div class="form-control__wrap">
-              <input type="email" class="form-control" name="user-email" id="user-email" placeholder="Email">
-            </div>
-            <div class="form-control__wrap form-control__wrap--textarea">
-              <textarea class="form-control form-control--textarea" name="user-message" id="user-message" placeholder="Сообщение*"></textarea>
-            </div>
-          </div>
-
-          <div class="button-row button-holder--modal">
-            <button type="button" class="button">Записаться</button>
-          </div>
-        </form>
+  <!-- Modal answer -->
+  <div class="modalbox modalbox--answer">
+    <div class="modal-container">
+      <div class="modal-body">
+        <button type="button" class="btn-modal-close"></button>
+        <p class="modal-form__title"></p>
       </div>
     </div>
   </div><!-- .modalbox end -->

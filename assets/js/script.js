@@ -387,3 +387,58 @@
   });
 
 })(jQuery);
+
+
+/*----------------------------------------------------*/
+/*  Show/hide form answer
+/*----------------------------------------------------*/
+
+(function() {
+  // Containers
+  var forms = document.querySelectorAll('.js-modal-form');
+  forms = Array.prototype.slice.call(forms, 0);
+
+  // Forms
+  var wpcf7Elms = document.querySelectorAll('.wpcf7');
+  wpcf7Elms = Array.prototype.slice.call(wpcf7Elms, 0);
+
+  // Answers
+  var answer = document.querySelector('.modalbox--answer');
+  var answerTextEl = document.querySelector('.modalbox--answer .modal-form__title');
+
+
+  function hideForm() {
+    forms.forEach(function(form) {
+      if (form.classList.contains('is-active')) {
+        form.classList.remove('is-active');
+      }
+    });
+  }
+
+  function hideAnswer() {
+    if (answer.classList.contains('is-active')) {
+      setTimeout(function() {
+        answer.classList.remove('is-active');
+        answerTextEl.textContent = "";
+      }, 3000);
+    }
+  }
+
+  wpcf7Elms.forEach(function(item) {
+
+    item.addEventListener('wpcf7mailsent', function() {
+      hideForm();
+      answer.classList.add('is-active');
+      answerTextEl.textContent = "Отправлено!";
+      hideAnswer();
+    });
+
+    item.addEventListener( 'wpcf7mailfailed', function() {
+      hideForm();
+      answer.classList.add('is-active');
+      answerTextEl.textContent = "Ошибка! Попробуйте позже.";
+      hideAnswer();
+    });
+
+  });
+})();

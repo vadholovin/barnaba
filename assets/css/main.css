@@ -237,6 +237,10 @@ body {
   clear: both;
 }
 
+p:empty {
+  display: none;
+}
+
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -2400,7 +2404,7 @@ body {
 
 .form-control--textarea {
   overflow-y: auto;
-  min-height: 100px;
+  height: 100px;
 }
 
 .button-holder--modal {
